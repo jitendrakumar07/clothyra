@@ -1,0 +1,6 @@
+{
+    "name": "fashion-store",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "installCommand": "npm install"
+  }

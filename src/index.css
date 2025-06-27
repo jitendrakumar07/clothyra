@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+.luxury-input {
+  @apply border border-[color:#ddd5c7] px-4 py-3 rounded-full w-full text-sm bg-[color:#fdfcfb] transition duration-300 focus:outline-none focus:border-[color:#d3ab66] focus:bg-white;
+}
+
+.luxury-payment {
+  @apply flex items-center gap-2 border border-[color:#ddd5c7] px-4 py-3 rounded-xl cursor-pointer bg-[color:#faf9f7];
+}
+
+.luxury-payment input[type="radio"] {
+  accent-color: #d3ab66;
+}
