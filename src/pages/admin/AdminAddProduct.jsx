@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-import axios from 'axios';
+
 
 const categories = ['Men', 'Women', 'Kids'];
 const subCategories = ['Topwear', 'Bottomwear', 'Winterwear'];

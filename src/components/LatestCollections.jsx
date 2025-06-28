@@ -44,13 +44,15 @@ const LatestCollections = () => {
             key={product._id}
             className="bg-white rounded-xl shadow-md group transition-transform hover:-translate-y-1.5 duration-300 border border-transparent hover:border-[#d3ab66]"
           >
+          <div className="w-full h-[240px] sm:h-[260px] md:h-[280px] overflow-hidden rounded-t-xl">
             <Link to={`/product/${product._id}`}>
               <img
                 src={product.images?.[0]}
                 alt={product.name}
-                className="w-[full] h-[220px] sm:h-[250px] md:h-[280px] object-cover rounded-t-xl transition duration-300 cursor-pointer"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
+            </div>
 
             <div className="px-3 py-2 space-y-1">
               <h3 className="text-[13px] sm:text-sm md:text-base font-medium text-[#1c130b] truncate">
