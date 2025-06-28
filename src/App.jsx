@@ -14,7 +14,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import Orders from './pages/Orders';
-
+import { Analytics } from "@vercel/analytics/react"
 
 // ✅ NEW: Import the new Admin
 import AdminAddProduct from './pages/admin/AdminAddProduct';
@@ -38,6 +38,7 @@ const App = () => {
     <Route path="orders" element={<Orders />} />  {/* ✅ NEW */}
     {/* ✅ This is now correct */}
     <Route path="admin/add-product" element={<AdminAddProduct />} />
+     <Analytics />
   </Route>
 </Routes>
 
