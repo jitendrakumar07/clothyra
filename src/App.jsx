@@ -38,10 +38,10 @@ const App = () => {
     <Route path="orders" element={<Orders />} />  {/* ✅ NEW */}
     {/* ✅ This is now correct */}
     <Route path="admin/add-product" element={<AdminAddProduct />} />
-     <Analytics />
+     
   </Route>
 </Routes>
-
+  <Analytics />
 
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
     </>
